@@ -1,0 +1,19 @@
+INTEGRACAO DOS PROJETOS
+
+ProjetoModelo (MVC) foi preservado. O site VidaLab do segundo projeto foi incorporado em:
+- app/controllers/VidaLabController.php
+- app/views/vidalab/
+- public/vidalab/ (CSS e imagens)
+
+A rota inicial agora abre a página VidaLab:
+index.php?controller=vidalab&action=inicio
+
+Páginas:
+- Início: controller=vidalab, action=inicio
+- Exames: controller=vidalab, action=exames
+- Cadastro demonstrativo: controller=vidalab, action=cadastro
+- Login: controller=login, action=index
+- Painel administrativo original: controller=painel, action=index
+- CRUD original de usuários: controller=usuario, action=index
+
+O cadastro de pacientes é apenas demonstrativo e ainda não persiste dados, pois o projeto original não contém tabela/model de pacientes. O login continua utilizando o banco e tabela configurados no ProjetoModelo.
